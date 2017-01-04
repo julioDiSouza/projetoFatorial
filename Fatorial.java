@@ -4,9 +4,12 @@ public class Fatorial {
 		if(n < 0)
 			throw new illegalArgumentException("Não existe Fatorial para número negativo");
 		int resultado = 1;
-		for (i = 2; i <= n; i++){
+		if(n != 0){
+			for (i = 2; i <= n; i++){
 			resultado = resultado * i;
+			}
 		}
+				
 		return resultado;
 	}
 
